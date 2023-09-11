@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(12, 12, 12);
+}
+
+.sec-1{
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.background{
+    background: rgb(0, 0, 0, 0.6) url(mypic.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.nav ul{
+    display: flex;
+    column-gap: 100px;
+}
+
+.nav ul li{
+    display: flex;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    color: aquamarine;
+}
+
+.intro{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+    font-size: 60px;
+}
+
+.intro h6{
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.intro h3{
+    font-weight: 700;
+    color: aquamarine;
+}
+
+.intro p{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+span{
+    font-weight: 700;
+    color: aquamarine;
+}
+
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.subheading h2{
+    color: aquamarine;
+    font-size: 50px;
+    padding: 100px;
+    font-weight: 300;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 122px;
+    row-gap: 130px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "education education education"
+      "skills prog-langs languages";
+    width: 80%;
+  }
+  
+  .education { grid-area: education; }
+  
+  .skills { grid-area: skills; }
+  
+  .prog-langs { grid-area: prog-langs; }
+  
+  .languages { grid-area: languages; }
+  
+
+.education{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.education h6{
+    color: aquamarine;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.edu-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    row-gap: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+#edu-date{
+    font-size: 12px;
+}
+
+#edu-course{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#edu-college{
+    font-size: 15px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h6{
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.web-d{ 
+    display: flex;
+    flex-direction: row;
+    color: white;
+    column-gap: 5px;
+}
+
+.web-d p{
+    margin-top: 30px;
+    background-color: rgb(70, 70, 70);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.prog-langs h6{
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.p-langs{ 
+    display: flex;
+    flex-direction: row;
+    color: white;
+    column-gap: 5px;
+}
+
+.p-langs p{
+    margin-top: 30px;
+    background-color: rgb(70, 70, 70);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.languages h6{
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.langs{ 
+    display: flex;
+    flex-direction: row;
+    color: white;
+    column-gap: 5px;
+}
+
+.langs p{
+    margin-top: 30px;
+    background-color: rgb(70, 70, 70);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.sec-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    column-gap: 100px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.form input{
+    padding: 15px;
+    width: 400px;
+    background-color:rgb(70, 70, 70);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.form textarea{
+    padding: 15px;
+    height: 200px;
+    width: 400px;
+    background-color:rgb(70, 70, 70);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button{
+    width: 100px;
+    padding: 8px;
+    background-color: rgb(70, 70, 70);
+    color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mssg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    color: white;
+    font-size: 35px;
+}
+
+.sec-4{
+    display: flex;
+    align-items: c;
+    justify-content: center;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    padding: 15px;
+    margin-top: 30px;
+}
