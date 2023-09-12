@@ -12,6 +12,7 @@ html{
 body{
     font-family: 'Rajdhani', sans-serif;
     background-color: rgb(12, 12, 12);
+    width: 100%;
 }
 
 .sec-1{
@@ -33,12 +34,6 @@ body{
     align-items: center;
     padding: 40px;
 }
-
-/*.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-} */
 
 .nav ul{
     display: flex;
