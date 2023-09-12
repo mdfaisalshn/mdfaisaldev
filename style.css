@@ -32,14 +32,13 @@ body{
     justify-content: center;
     align-items: center;
     padding: 40px;
-    z-index: 1;
 }
 
-.sticky{
+/*.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 .nav ul{
     display: flex;
