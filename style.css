@@ -89,7 +89,6 @@ span{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
 }
 
 .subheading h2{
@@ -102,21 +101,20 @@ span{
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     column-gap: 122px;
-    row-gap: 130px;
+    row-gap: 100px;
     grid-auto-flow: row;
     grid-template-areas:
       "education education education"
-      "skills prog-langs languages";
+      "skills skills languages"
+      "skills skills languages";
     width: 80%;
   }
   
   .education { grid-area: education; }
   
   .skills { grid-area: skills; }
-  
-  .prog-langs { grid-area: prog-langs; }
   
   .languages { grid-area: languages; }
   
@@ -130,6 +128,7 @@ span{
 .education h6{
     color: aquamarine;
     font-size: 20px;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -140,7 +139,7 @@ span{
     border-radius: 10px;
     row-gap: 5px;
     padding: 20px;
-    width: 100%;
+    width: 95%;
 }
 
 #edu-date{
@@ -164,55 +163,107 @@ span{
 .skills h6{
     color: aquamarine;
     font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .web-d{ 
     display: flex;
-    flex-direction: row;
-    color: white;
-    column-gap: 5px;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.web-d p{
-    margin-top: 30px;
+.front-end{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(70, 70, 70);
-    padding: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.front-end h6{
+    font-size: 15px;
+    color: white;
+}
+
+.front-end-list{
+    display: flex;
+    column-gap: 12px;
+}
+
+.front-end-list p{
+    color: white;
+    padding: 5px;
     border-radius: 3px;
+    font-weight: 700px;
+}
+
+.back-end{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 70, 70);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.back-end h6{
+    font-size: 15px;
+    color: white;
+}
+
+.back-end-list{
+    display: flex;
+    column-gap: 12px;
+}
+
+.back-end-list p{
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 700px;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
 }
 
 .prog-langs h6{
     color: aquamarine;
     font-size: 20px;
+    font-weight: 400;
 }
 
 .p-langs{ 
     display: flex;
     flex-direction: row;
     color: white;
-    column-gap: 5px;
+    column-gap: 10px;
 }
 
 .p-langs p{
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: rgb(70, 70, 70);
     padding: 8px;
     border-radius: 3px;
 }
 
-.languages h6{
+.speak-langs h6{
     color: aquamarine;
     font-size: 20px;
+    font-weight: 400;
 }
 
 .langs{ 
     display: flex;
     flex-direction: row;
     color: white;
-    column-gap: 5px;
+    column-gap: 10px;
 }
 
 .langs p{
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: rgb(70, 70, 70);
     padding: 8px;
     border-radius: 3px;
@@ -224,6 +275,7 @@ span{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 
 .contact{
