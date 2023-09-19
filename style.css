@@ -381,6 +381,7 @@ span{
         justify-content: start;
         align-items: center;
         row-gap: 15%;
+        height: 100%;
     }
     
     .background{
@@ -779,7 +780,8 @@ span{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        row-gap: 25%;
+        row-gap: 20px;
+        height: 100%;
     }
     
     .background{
@@ -858,14 +860,13 @@ span{
         width: 100%;
     }
     
-    
     .content {
         display: grid;
         align-items: center;
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 50px;
+        row-gap: 40px;
         grid-auto-flow: row;
         grid-template-areas:
           "education education"
@@ -1065,7 +1066,6 @@ span{
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 200px;
     }
     
     .contact{
@@ -1111,7 +1111,7 @@ span{
         align-items: center;
         justify-content: center;  
         color: white;
-        font-size: 21px;
+        font-size: 19px;
         width: 100%;
     }
 
