@@ -15,6 +15,16 @@ body{
     width: 100%;
 }
 
+button{
+    width: 100px;
+    padding: 8px;
+    background-color: rgb(70, 70, 70);
+    color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 span{
     font-weight: 700;
     color: aquamarine;
@@ -77,7 +87,6 @@ span{
     justify-content: center;
     flex-direction: column;
     font-size: 60px;
-    width: 40%;
 }
 
 .intro h6{
@@ -86,7 +95,6 @@ span{
     justify-content: center;
     font-weight: 100;
     font-size: 70px;
-    width: 100%;
 }
 
 .intro h3{
@@ -95,7 +103,6 @@ span{
     justify-content: center;
     font-weight: 700;
     color: aquamarine;
-    width: 100%;
 }
 
 .intro p{
@@ -104,7 +111,6 @@ span{
     justify-content: center;
     font-size: 40px;
     font-weight: 400;
-    width: 100%;
 }
 
 .sec-2{
@@ -177,7 +183,7 @@ span{
 .skills{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
 }
 
 .skills h6{
@@ -200,16 +206,18 @@ span{
     background-color: rgb(70, 70, 70);
     padding: 10px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .front-end h6{
     font-size: 15px;
     color: white;
+    width: 100%;
 }
 
 .front-end-list{
     display: flex;
-    column-gap: 12px;
+    column-gap: 8%;
 }
 
 .front-end-list p{
@@ -225,6 +233,7 @@ span{
     background-color: rgb(70, 70, 70);
     padding: 10px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .back-end h6{
@@ -290,7 +299,302 @@ span{
     border-radius: 3px;
 }
 
-.sec-3{
+@media only screen and (max-width: 1100px){
+    
+    .subheading h2{
+        color: aquamarine;
+        font-size: 30px;
+        padding: 100px;
+        font-weight: 300;
+        width: 100%;
+    }
+
+    .sec-1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 15%;
+    }
+    
+    .background{
+        background: rgb(0, 0, 0, 0.6) url(mypic.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    
+    .nav{
+        width: 100%;
+    }
+    
+    .nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 10px;
+        margin: 3%;
+    }
+    
+    .nav ul li{
+        display: flex;
+        font-size: 10px;
+    }
+    
+    .nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav ul li a:hover{
+        color: aquamarine;
+    }
+
+    .intro{
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 60px;
+        width: 90%;
+    }
+    
+    .intro h6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+        font-size: 40px;
+    }
+    
+    .intro h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 50px;
+        color: aquamarine;
+    }
+    
+    .intro p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .sec-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    .content {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 100px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "education education"
+          "skills skills"
+          "languages languages";
+        width: 70%;
+      }
+      
+      .education { grid-area: education; }
+      
+      .skills { grid-area: skills; }
+      
+      .languages { grid-area: languages; }
+      
+    
+    .education{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+    }
+    
+    .education h6{
+        color: aquamarine;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .edu-box{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(70, 70, 70);
+        border-radius: 10px;
+        row-gap: 5px;
+        padding: 20px;
+        width: 95%;
+    }
+    
+    #edu-date{
+        font-size: 10px;
+    }
+    
+    #edu-course{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    #edu-college{
+        font-size: 13px;
+    }
+    
+    .skills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .skills h6{
+        color: aquamarine;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    .web-d{ 
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+    }
+    
+    .front-end{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(70, 70, 70);
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    
+    .front-end h6{
+        font-size: 15px;
+        color: white;
+    }
+    
+    .front-end-list{
+        display: flex;
+        column-gap: 5%;
+    }
+    
+    .front-end-list p{
+        color: white;
+        padding: 1%;
+        border-radius: 3px;
+        font-weight: 700px;
+    }
+    
+    .back-end{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(70, 70, 70);
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    
+    .back-end h6{
+        font-size: 15px;
+        color: white;
+    }
+    
+    .back-end-list{
+        display: flex;
+        column-gap: 5%;
+    }
+    
+    .back-end-list p{
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+        font-weight: 700px;
+    }
+    
+    .languages{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
+    }
+
+    .prog-langs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .prog-langs h6{
+        color: aquamarine;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .p-langs{ 
+        display: flex;
+        flex-direction: row;
+        color: white;
+        column-gap: 10px;
+    }
+    
+    .p-langs p{
+        margin-top: 15px;
+        background-color: rgb(70, 70, 70);
+        padding: 8px;
+        border-radius: 3px;
+    }
+
+    .speak-langs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .speak-langs h6{
+        color: aquamarine;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .langs{ 
+        display: flex;
+        flex-direction: row;
+        color: white;
+        column-gap: 10px;
+    }
+    
+    .langs p{
+        margin-top: 15px;
+        background-color: rgb(70, 70, 70);
+        padding: 8px;
+        border-radius: 3px;
+    }
+}
+
+/* .sec-3{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,16 +634,6 @@ span{
     border-radius: 5px;
 }
 
-button{
-    width: 100px;
-    padding: 8px;
-    background-color: rgb(70, 70, 70);
-    color: aquamarine;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .mssg{
     display: flex;
     flex-direction: column;
@@ -362,4 +656,4 @@ button{
 
 .sec-4 p{
     margin: 15px;
-}
+} */
