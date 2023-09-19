@@ -364,7 +364,7 @@ span{
 }
 
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 1100px){
     
     .subheading h2{
         color: aquamarine;
@@ -509,11 +509,11 @@ span{
     }
     
     #edu-date{
-        font-size: 8px;
+        font-size: 10px;
     }
     
     #edu-course{
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 600;
     }
     
@@ -681,7 +681,7 @@ span{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
     }
     
     .form input{
@@ -764,7 +764,7 @@ span{
     }
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 600px){
     
     .subheading h2{
         color: aquamarine;
@@ -908,11 +908,11 @@ span{
     }
     
     #edu-date{
-        font-size: 10px;
+        font-size: 9px;
     }
     
     #edu-course{
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 600;
     }
     
@@ -966,6 +966,7 @@ span{
         padding: 1%;
         border-radius: 3px;
         font-weight: 700px;
+        font-size: 13px;
     }
     
     .back-end{
@@ -992,6 +993,7 @@ span{
         padding: 5px;
         border-radius: 3px;
         font-weight: 700px;
+        font-size: 13px;
     }
     
     .languages{
@@ -1109,7 +1111,7 @@ span{
         align-items: center;
         justify-content: center;  
         color: white;
-        font-size: 35px;
+        font-size: 21px;
         width: 100%;
     }
 
