@@ -884,7 +884,7 @@ span{
           "education education"
           "skills skills"
           "languages languages";
-        width: 70%;
+        width: 90%;
       }
       
       .education { grid-area: education; }
@@ -916,7 +916,7 @@ span{
         background-color: rgb(70, 70, 70);
         border-radius: 10px;
         row-gap: 5px;
-        padding: 20px;
+        padding: 5%;
         width: 95%;
     }
     
@@ -938,7 +938,7 @@ span{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
+        width: 97%;
     }
     
     .skills h6{
@@ -959,19 +959,19 @@ span{
         display: flex;
         flex-direction: column;
         background-color: rgb(70, 70, 70);
-        padding: 10px;
+        padding: 2%;
         border-radius: 10px;
         width: 100%;
     }
     
     .front-end h6{
-        font-size: 15px;
+        font-size: 12px;
         color: white;
     }
     
     .front-end-list{
         display: flex;
-        column-gap: 1%;
+        column-gap: 5%;
     }
     
     .front-end-list p{
@@ -979,7 +979,7 @@ span{
         padding: 1%;
         border-radius: 3px;
         font-weight: 700px;
-        font-size: 13px;
+        font-size: 10px;
     }
     
     .back-end{
@@ -989,16 +989,17 @@ span{
         padding: 10px;
         border-radius: 10px;
         width: 100%;
+        padding: 2%;
     }
     
     .back-end h6{
-        font-size: 15px;
+        font-size: 12px;
         color: white;
     }
     
     .back-end-list{
         display: flex;
-        column-gap: 1%;
+        column-gap: 5%;
     }
     
     .back-end-list p{
@@ -1006,7 +1007,7 @@ span{
         padding: 5px;
         border-radius: 3px;
         font-weight: 700px;
-        font-size: 13px;
+        font-size: 10px;
     }
     
     .languages{
@@ -1033,9 +1034,11 @@ span{
     
     .p-langs{ 
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
         color: white;
-        column-gap: 10px;
+        column-gap: 25%;
     }
     
     .p-langs p{
@@ -1043,6 +1046,7 @@ span{
         background-color: rgb(70, 70, 70);
         padding: 8px;
         border-radius: 3px;
+        font-size: 10px;
     }
 
     .speak-langs{
@@ -1060,9 +1064,11 @@ span{
     
     .langs{ 
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
         color: white;
-        column-gap: 10px;
+        column-gap: 20%;
     }
     
     .langs p{
@@ -1070,6 +1076,7 @@ span{
         background-color: rgb(70, 70, 70);
         padding: 8px;
         border-radius: 3px;
+        font-size: 10px;
     }
 
     .sec-3{
