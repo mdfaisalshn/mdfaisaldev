@@ -1064,7 +1064,7 @@ span{
         justify-content: center;
         flex-direction: row;
         color: white;
-        column-gap: 16%;
+        column-gap: 5%;
     }
     
     .p-langs p{
@@ -1094,7 +1094,7 @@ span{
         justify-content: center;
         flex-direction: row;
         color: white;
-        column-gap: 15%;
+        column-gap: 5%;
     }
     
     .langs p{
