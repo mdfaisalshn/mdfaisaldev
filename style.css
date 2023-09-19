@@ -345,7 +345,7 @@ span{
     align-items: start;
     justify-content: center;  
     color: white;
-    font-size: 35px;
+    font-size: 34px;
     width: 57%;
 }
 
@@ -710,7 +710,7 @@ span{
         align-items: center;
         justify-content: center;  
         color: white;
-        font-size: 35px;
+        font-size: 30px;
         width: 100%;
     }
 
@@ -764,7 +764,7 @@ span{
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 620px){
     
     .subheading h2{
         color: aquamarine;
