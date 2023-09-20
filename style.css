@@ -243,7 +243,7 @@ span{
 
 .back-end-list{
     display: flex;
-    column-gap: 12px;
+    column-gap: 8%;
 }
 
 .back-end-list p{
@@ -350,7 +350,8 @@ span{
 
 .sec-4{
     display: flex;
-    align-items: c;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: white;
     background-color: rgb(70, 70, 70);
@@ -358,8 +359,86 @@ span{
     width: 100%;
 }
 
-.sec-4 p{
-    margin: 15px;
+.foot-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100%;
+    padding: 5%;
+}
+
+.secnav{
+    width: 100%;
+}
+
+.secnav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.secnav ul li{
+    display: flex;
+}
+
+.secnav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.secnav ul li p{
+    display: flex;
+    font-size: 20px;
+    color: aquamarine;
+}
+
+.secnav ul li a:hover{
+    color: aquamarine;
+}
+
+.secsoc{
+    width: 100%;
+}
+
+.secsoc ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.secsoc ul li{
+    display: flex;
+}
+
+.secsoc ul li p{
+    display: flex;
+}
+
+.secsoc ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.secsoc ul li p{
+    display: flex;
+    font-size: 20px;
+    color: aquamarine;
+}
+
+.secsoc ul li a:hover{
+    color: aquamarine;
+}
+
+.rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
 }
 
 
@@ -1156,7 +1235,7 @@ span{
 
     .sec-4{
         display: flex;
-        align-items: c;
+        align-items: start;
         justify-content: center;
         color: white;
         background-color: rgb(70, 70, 70);
@@ -1164,6 +1243,15 @@ span{
         width: 100%;
     }
     
+    .foot-links{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 5%;
+    }
+
     .sec-4 p{
         margin: 15px;
     }
