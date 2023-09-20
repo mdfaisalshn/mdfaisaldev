@@ -878,14 +878,14 @@ span{
         display: grid;
         align-items: center;
         justify-content: center;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 1px;
         grid-auto-flow: row;
         grid-template-areas:
-          "education education"
-          "skills skills"
-          "languages languages";
+          "education"
+          "skills"
+          "languages";
         width: 90%;
       }
       
@@ -1039,7 +1039,7 @@ span{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 30px;
         width: 100%;
     }
 
@@ -1066,7 +1066,6 @@ span{
     }
     
     .p-langs p{
-        margin-top: 15px;
         background-color: rgb(70, 70, 70);
         padding: 8px;
         border-radius: 3px;
@@ -1096,7 +1095,6 @@ span{
     }
     
     .langs p{
-        margin-top: 15px;
         background-color: rgb(70, 70, 70);
         padding: 8px;
         border-radius: 3px;
