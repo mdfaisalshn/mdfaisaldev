@@ -1,8 +1,9 @@
 const myself = {
     firstName : "Mohammed",
-    lastName : "Faisal",
+    midName : "Faisal",
+    lastName : "Shahna",
     myPost : "Web" + " " + "Designer"
 }
 
-document.getElementById("myname").innerHTML = myself.firstName + " " + myself.lastName;
+document.getElementById("myname").innerHTML = myself.firstName + " " + myself.midName + " " + myself.lastName;
 document.getElementById("mypost").innerHTML = myself.myPost;
