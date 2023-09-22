@@ -38,11 +38,11 @@ span{
 
 .sec-1{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
     row-gap: 20%;
 }
 
@@ -55,14 +55,21 @@ span{
 
 .nav{
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav.navsc{
+    background: rgb(70, 70, 70);
 }
 
 .nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 10%;
-    margin: 3%;
+    column-gap: 9%;
+    margin: 2%;
 }
 
 .nav ul li{
@@ -117,7 +124,7 @@ span{
     justify-content: center;
     flex-direction: column;
     row-gap: 100px;
-    height: 1100px;
+    height: 130vh;
     width: 100%;
 }
 
@@ -149,14 +156,14 @@ span{
     color: white;
     background-color: rgb(70, 70, 70);
     row-gap: 10px;
-    padding: 30px 30px;
+    padding: 10px 30px;
     background-image: url(SUI\ LOGO.png);
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .card h3{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .card h5{
@@ -372,15 +379,19 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 50px;
 }
 
 .img{
-    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
 }
 
 .img img{
-    height: 300px;
-    width: 500px;
+    height: 430px;
+    width: 300px;
 }
 
 .about{
@@ -402,7 +413,7 @@ span{
     align-items: center;
     justify-content: center;
     width: 100%;
-    column-gap: 14%;
+    column-gap: 10%;
 }
 
 .count-box{
@@ -417,12 +428,12 @@ span{
 }
 
 .count-box p{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
 }
 
 .count-box h6{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 500;
 }
 
@@ -488,7 +499,7 @@ span{
 
 .foot-links{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     width: 90%;
     column-gap: 15%;
@@ -500,7 +511,7 @@ span{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 30px;
     width: 30%;
 }
 
