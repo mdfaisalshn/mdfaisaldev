@@ -110,12 +110,17 @@ nav.navsc{
     color: aquamarine;
 }
 
-.intro p{
+#web-p{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    column-gap: 10px;
     font-size: 40px;
     font-weight: 400;
+}
+
+#mypost{
+    color: aquamarine;
 }
 
 .sec-6{
