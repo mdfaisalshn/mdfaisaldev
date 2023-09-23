@@ -31,3 +31,32 @@ const typeWriter = () => {
 }
 
 typeWriter();
+
+function firsPageAnim(){
+    var tl=gsap.timeline();
+
+    tl.from("#myname",{
+        y: -20,
+        opacity: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut
+    })
+    // .to("#myname",{
+    //     y: 0,
+    //     ease: Expo.easeInOut,
+    //     duration: 2,
+    //     delay: -1,
+    //     stagger: .2
+    // })
+    // .from("#subheading",{
+    //     y:'-10',
+    //     opacity: 0,
+    //     ease: Expo.easeInOut,
+    //     duration:1.5,
+    //     delay: -1
+        
+    // })
+    
+}
+
+firsPageAnim();
