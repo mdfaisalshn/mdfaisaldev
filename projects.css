@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+}
+
+button{
+    width: 100px;
+    padding: 8px;
+    background-color: rgb(70, 70, 70);
+    color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+span{
+    font-weight: 500;
+    color: aquamarine;
+}
+
+.subheading h2{
+    color: aquamarine;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    row-gap: 20%;
+}
+
+.background{
+    background: rgb(0, 0, 0, 0.5) url(mypic.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav.navsc{
+    background: rgb(70, 70, 70);
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 4%;
+    margin: 2%;
+}
+
+.nav ul li{
+    display: flex;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    color: aquamarine;
+}
+
+.intro{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 60px;
+}
+
+.intro h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.intro h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: aquamarine;
+}
+
+.intro p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.sec-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 100px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.proj-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 80px;
+    width: 100%;
+}
+
+.proj-cards{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 100px;
+    width: 95%;
+}
+
+.card{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    row-gap: 10px;
+    padding: 10px 30px;
+    background-image: url(SUI\ LOGO.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.card h3{
+    margin-top: 80px;
+}
+
+.card h5{
+    font-weight: 400;
+}
+
+.sec-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    margin-top: 50px;
+    width: 100%;
+}
+
+.foot-links{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    column-gap: 15%;
+    padding: 5%;
+}
+
+.secabt{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 30%;
+}
+
+#navabt{
+    font-size: 20px;
+    color: aquamarine;
+}
+
+.secabt p{
+    font-size: 17px;
+    color: white;
+}
+
+.secnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+}
+
+.secnav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.secnav ul li{
+    display: flex;
+}
+
+.secnav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.secnav ul li p{
+    display: flex;
+    font-size: 20px;
+    color: aquamarine;
+}
+
+.secnav ul li a:hover{
+    color: aquamarine;
+}
+
+.secsoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.secsoc ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.secsoc ul li{
+    display: flex;
+}
+
+.secsoc ul li p{
+    display: flex;
+}
+
+.secsoc ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.secsoc ul li p{
+    display: flex;
+    font-size: 20px;
+    color: aquamarine;
+}
+
+.secsoc ul li a:hover{
+    color: aquamarine;
+}
+
+.rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
+}
