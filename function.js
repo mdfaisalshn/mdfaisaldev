@@ -1,8 +1,3 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#home'),
-    smooth: true
-});
-
 let mypost = document.querySelector('#mypost');
 let post = "Designer";
 let flag = 0;
