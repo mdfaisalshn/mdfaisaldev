@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#home'),
+    smooth: true
+});
+
 let mypost = document.querySelector('#mypost');
 let post = "Designer";
 let flag = 0;
@@ -30,33 +35,69 @@ const typeWriter = () => {
     setTimeout(() => typeWriter(), 150);
 }
 
+
 typeWriter();
 
-function firsPageAnim(){
+
+let proj = document.querySelector('.sec-6');
+
+function animation(){
     var tl=gsap.timeline();
 
-    tl.from("#myname",{
-        y: -20,
+    tl.from("#nav",{
+        y: '-10',
         opacity: 0,
-        duration: 1.5,
+        duration: 0.3,
         ease: Expo.easeInOut
     })
-    // .to("#myname",{
-    //     y: 0,
-    //     ease: Expo.easeInOut,
-    //     duration: 2,
-    //     delay: -1,
-    //     stagger: .2
-    // })
-    // .from("#subheading",{
-    //     y:'-10',
-    //     opacity: 0,
-    //     ease: Expo.easeInOut,
-    //     duration:1.5,
-    //     delay: -1
-        
-    // })
-    
+    .from("#hello",{
+        y: '50',
+        opacity: 0,
+        ease: Expo.easeInOut,
+        duration: 0.5,
+        delay: 0,
+        stagger: .2
+    })
+    .from("#myname",{
+        y: '50',
+        opacity: 0,
+        ease: Expo.easeInOut,
+        duration: 0.5,
+        delay: 0,
+        stagger: .2
+    })
+    .from("#web-p",{
+        y: '50',
+        opacity: 0,
+        ease: Expo.easeInOut,
+        duration: 0.5,
+        delay: 0,
+        stagger: .2
+    })
+    .from("#resume-btn",{
+        y: '50',
+        opacity: 0,
+        ease: Expo.easeInOut,
+        duration: 0.5,
+        delay: 0,
+        stagger: .2
+    })
 }
 
-firsPageAnim();
+animation();
+
+// let tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.sec-6',
+//         start: '0% center',
+//         end: '10% center',
+//         scrub: true,
+//         markers: false
+//     }
+// })
+
+// tl.from('.sec-6', {
+//     x: -10,
+//     opacity: 0,
+//     ease: Expo.easeInOut
+// })

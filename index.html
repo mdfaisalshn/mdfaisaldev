@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Faisal Shahna</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 </head>
 <body id="home">
     <div class="sec-1 background">
         <div id="nav" class="nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#blog">Blogs</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li id="li-h"><a href="#home">Home</a></li>
+                <li id="li-p"><a href="#projects">Projects</a></li>
+                <li id="li-r"><a href="#resume">Resume</a></li>
+                <li id="li-b"><a href="#blog">Blogs</a></li>
+                <li id="li-a"><a href="#about">About</a></li>
+                <li id="li-c"><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="intro">
-            <h6>Hello, I am</h6>
+            <h6 id="hello">Hello, I am</h6>
             <h3 id="myname">Mohammed Faisal Shahna</h3>
             <div id="web-p">
                 <p id="web">Web</p>
                 <p id="mypost"></p>
             </div>
-            <a href="Resume.pdf" download><button>Resume</button></a>
+            <a id="resume-btn" href="Resume.pdf" download><button>Resume</button></a>
         </div>
     </div>
 
