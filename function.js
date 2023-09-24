@@ -145,6 +145,13 @@ tl1.from('.card-6', {
     duration: 0.1
 })
 
+tl1.from('#proj-view-btn', {
+    x: -50,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    duration: 0.1
+})
+
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.sec-2',
@@ -243,14 +250,14 @@ tl3.from('.inp-3', {
 })
 
 tl3.from('#feed-mssg', {
-    x: -50,
+    y: 100,
     opacity: 0,
     ease: Expo.easeInOut,
     duration: 0.1
 })
 
 tl3.from('#mssg-span', {
-    x: -50,
+    1: 100,
     opacity: 0,
     ease: Expo.easeInOut,
     duration: 0.1
@@ -283,14 +290,15 @@ tl5.from('#abt-head', {
     x: -50,
     opacity: 0,
     ease: Expo.easeInOut,
+    delay: 0.3,
     duration: 0.1
 })
 
 tl5.from('.about p', {
-    x: -50,
+    y: 100,
     opacity: 0,
     ease: Expo.easeInOut,
-    duration: 0.1
+    duration: 0.5
 })
 
 tl5.from('.img', {
@@ -331,7 +339,7 @@ tl5.from('.cb-4', {
     ease: Expo.easeInOut,
     duration: 0.1
 })
-tl5.add(gsap.delayedCall(-0.3,counter4));
+tl5.add(gsap.delayedCall(-0.1,counter4));
 
 
 function counter1(){
@@ -351,7 +359,7 @@ function counter2(){
     function updated2() {
         let count2 = document.getElementById("counter-2");
         count2.innerHTML = ++upto2;
-        if (upto2 === 100) {
+        if (upto2 === 300) {
             clearInterval(counts2);
         }
     }
