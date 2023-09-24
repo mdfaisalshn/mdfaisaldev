@@ -1,16 +1,7 @@
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      }
-    });
-  });
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#home'),
+//     smooth: true
+// });
 
 let mypost = document.querySelector('#mypost');
 let post = "Designer";
@@ -56,7 +47,7 @@ function animation(){
     tl.from("#nav",{
         y: '-10',
         opacity: 0,
-        duration: 1,
+        duration: 0.8,
         ease: Expo.easeInOut
     })
     .from("#hello",{
@@ -100,8 +91,7 @@ let tl1 = gsap.timeline({
         trigger: '.sec-6',
         start: '15% 80%',
         end: '35% 15%',
-        toggleAction: "restart reverse",
-        scrub: false,
+        scrub: 1,
         markers: false
     }
 })
@@ -160,7 +150,7 @@ let tl2 = gsap.timeline({
         trigger: '.sec-2',
         start: '10% 80%',
         end: '35% 20%',
-        scrub: false,
+        scrub: 1,
         markers: false
     }
 })
@@ -219,7 +209,7 @@ let tl3 = gsap.timeline({
         trigger: '.sec-3',
         start: '15% 80%',
         end: '35% 20%',
-        scrub: false,
+        scrub: 1,
         markers: false
     }
 })
@@ -282,21 +272,14 @@ tl3.from('#form-btn', {
 let tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: '.sec-5',
-        start: '20% 80%',
-        end: '35% 20%',
-        scrub: false,
+        start: '15% 80%',
+        end: '19% 20%',
+        scrub: 1,
         markers: false
     }
 })
 
 tl5.from('#abt-head', {
-    x: -50,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    duration: 0.1
-})
-
-tl5.from('.img', {
     x: -50,
     opacity: 0,
     ease: Expo.easeInOut,
@@ -310,12 +293,21 @@ tl5.from('.about p', {
     duration: 0.1
 })
 
+tl5.from('.img', {
+    x: -50,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    duration: 0.1
+})
+
+
 tl5.from('.cb-1', {
     x: -50,
     opacity: 0,
     ease: Expo.easeInOut,
     duration: 0.1
 })
+tl5.add(gsap.delayedCall(0,counter1));
 
 tl5.from('.cb-2', {
     x: -50,
@@ -323,6 +315,7 @@ tl5.from('.cb-2', {
     ease: Expo.easeInOut,
     duration: 0.1
 })
+tl5.add(gsap.delayedCall(0,counter2));
 
 tl5.from('.cb-3', {
     x: -50,
@@ -330,6 +323,7 @@ tl5.from('.cb-3', {
     ease: Expo.easeInOut,
     duration: 0.1
 })
+tl5.add(gsap.delayedCall(0,counter3));
 
 tl5.from('.cb-4', {
     x: -50,
@@ -337,40 +331,50 @@ tl5.from('.cb-4', {
     ease: Expo.easeInOut,
     duration: 0.1
 })
+tl5.add(gsap.delayedCall(-0.3,counter4));
 
-let counts1 = setInterval(updated1);
-        let upto1 = 0;
-        function updated1() {
-            let count1 = document.getElementById("counter-1");
-            count1.innerHTML = ++upto1;
-            if (upto1 === 100) {
-                clearInterval(counts1);
-            }
+
+function counter1(){
+    let counts1 = setInterval(updated1);
+    let upto1 = 0;
+    function updated1() {
+        let count1 = document.getElementById("counter-1");
+        count1.innerHTML = ++upto1;
+        if (upto1 === 300) {
+            clearInterval(counts1);
         }
-let counts2 = setInterval(updated2);
-        let upto2 = 0;
-        function updated2() {
-            let count2 = document.getElementById("counter-2");
-            count2.innerHTML = ++upto2;
-            if (upto2 === 100) {
-                clearInterval(counts2);
-            }
+    }
+}
+function counter2(){
+    let counts2 = setInterval(updated2);
+    let upto2 = 0;
+    function updated2() {
+        let count2 = document.getElementById("counter-2");
+        count2.innerHTML = ++upto2;
+        if (upto2 === 100) {
+            clearInterval(counts2);
         }
-let counts3 = setInterval(updated3);
-        let upto3 = 0;
-        function updated3() {
-            let count3 = document.getElementById("counter-3");
-            count3.innerHTML = ++upto3;
-            if (upto3 === 250) {
-                clearInterval(counts3);
-            }
+    }
+}
+function counter3(){
+    let counts3 = setInterval(updated3);
+    let upto3 = 0;
+    function updated3() {
+        let count3 = document.getElementById("counter-3");
+        count3.innerHTML = ++upto3;
+        if (upto3 === 250) {
+            clearInterval(counts3);
         }
-let counts4 = setInterval(updated4);
-        let upto4 = 0;
-        function updated4() {
-            let count4 = document.getElementById("counter-4");
-            count4.innerHTML = ++upto4;
-            if (upto4 === 450) {
-                clearInterval(counts4);
-            }
+    }
+}
+function counter4(){
+    let counts4 = setInterval(updated4);
+    let upto4 = 0;
+    function updated4() {
+        let count4 = document.getElementById("counter-4");
+        count4.innerHTML = ++upto4;
+        if (upto4 === 450) {
+            clearInterval(counts4);
         }
+    }
+}
