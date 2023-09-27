@@ -4,7 +4,7 @@
 // });
 
 let mypost = document.querySelector('#mypost');
-let post = "Designer";
+let post = "Web Designer";
 let flag = 0;
 
 let index = 0;
@@ -23,16 +23,20 @@ const typeWriter = () => {
     if(index > post.length) {
         flag = 1;
     }
-    if (index === 0 && post==="Designer") {
+    if (index === 0 && post==="Web Designer") {
         flag = 0;
-        post = "Developer";
+        post = "Web Developer";
     }
-    else if (index === 0 && post==="Developer") {
+    else if (index === 0 && post==="Web Developer") {
         flag = 0;
-        post = "Designer";
+        post = "Video Editor";
+    }
+    else if (index === 0 && post==="Video Editor") {
+        flag = 0;
+        post = "Web Designer";
     }
 
-    setTimeout(() => typeWriter(), 150);
+    setTimeout(() => typeWriter(), 100);
 }
 
 
